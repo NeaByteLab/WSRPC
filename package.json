@@ -1,0 +1,72 @@
+{
+  "name": "@neabyte/wsrpc",
+  "description": "Bidirectional remote procedure calls with real-time server event broadcasting",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild --minify",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "keywords": [
+    "bidirectional-communication",
+    "binary-protocol",
+    "client-server",
+    "daemon-service",
+    "distributed-systems",
+    "event-broadcasting",
+    "ipc",
+    "low-latency",
+    "message-passing",
+    "microservice-communication",
+    "network-transport",
+    "networking",
+    "pubsub",
+    "real-time",
+    "remote-procedure-call",
+    "rpc",
+    "socket-communication",
+    "tcp",
+    "web-transport",
+    "websocket"
+  ],
+  "devDependencies": {
+    "@typescript/typescript6": "^6.0.2",
+    "unbuild": "^3.6.1"
+  },
+  "author": {
+    "name": "NeaByteLab",
+    "email": "me@neabyte.com",
+    "url": "https://github.com/NeaByteLab"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeaByteLab/WSRPC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeaByteLab/WSRPC/issues"
+  },
+  "homepage": "https://github.com/NeaByteLab/WSRPC#readme",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
